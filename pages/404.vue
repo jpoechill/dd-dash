@@ -21,10 +21,9 @@ export default {
   components: {
   },
   layout: 'empty',
-  created() {
-    this.$router.push({
-        path: '/404'
-    })
+  data() {
+    return {
+    }
   },
   methods: {
   },
