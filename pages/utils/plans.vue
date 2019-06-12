@@ -18,7 +18,7 @@
             <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
               <div class="row">
                 <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-100"></video>
+                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-101"></video>
                   <!-- <img src="/unsplash/balloons.png" class="w-100" alt=""> -->
                 </div>
               </div>
@@ -34,7 +34,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <!-- <img src="/unsplash/umbrella.png" class="w-100" alt=""> -->
-                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-100"></video>
+                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-101"></video>
                 </div>
               </div>
               <div class="row px-1 mx-1 py-3">
@@ -52,7 +52,7 @@
             <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
               <div class="row">
                 <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-100"></video>
+                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
                 </div>
               </div>
               <div class="row px-1 mx-1 py-3">
@@ -66,7 +66,7 @@
             <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
               <div class="row">
                 <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-100"></video>
+                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
                 </div>
               </div>
               <div class="row px-1 mx-1 py-3">
@@ -80,7 +80,7 @@
             <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
               <div class="row">
                 <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-100"></video>
+                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
                 </div>
               </div>
               <div class="row px-1 mx-1 py-3">

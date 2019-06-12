@@ -191,19 +191,22 @@ export default {
     toggleCategory (categoryName) {
       let categories = this.sidebarCategories
 
+      let file = '/sounds/beep-02.mp3'
+      var audio = new Audio(file);
+      audio.play()
+
       for (let category in categories) {
         if (categories[category].categoryName === categoryName) {
           categories[category].isActive = !categories[category].isActive
         }
       }
-
-      let file = '/sounds/beep-02.mp3'
-      var audio = new Audio(file);
-      audio.play()
     },
     toggleLink (linkTitle) {
       let categories = this.sidebarCategories
-      // alert(linkTitle)
+      
+      let file = '/sounds/blop.mp3'
+      var audio = new Audio(file);
+      audio.play()
 
       for (let category in categories) {
         // console.log('Category: ' + categories[category].categoryName)
@@ -217,9 +220,6 @@ export default {
         }
       }
 
-      let file = '/sounds/blop.mp3'
-      var audio = new Audio(file);
-      audio.play()
     }
   },
 }
