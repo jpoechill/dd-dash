@@ -184,7 +184,7 @@ export default {
     toggleMenu () {
       this.sidebarIsToggled = !this.sidebarIsToggled
 
-      let file = '/sounds/shazam.mp3'
+      let file = '/sounds/beep-01.mp3'
       var audio = new Audio(file);
       audio.play()
     },
@@ -197,7 +197,7 @@ export default {
         }
       }
 
-      let file = '/sounds/tiger.mp3'
+      let file = '/sounds/beep-02.mp3'
       var audio = new Audio(file);
       audio.play()
     },

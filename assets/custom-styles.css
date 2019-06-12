@@ -76,6 +76,10 @@ color: #000;
     opacity: .25;
 }
 
+.w-101 {
+    width: 101%!important;
+}
+
 /* .font-weight-bold {
     font-weight: 700;
 } */
