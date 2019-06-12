@@ -58,7 +58,7 @@ color: #000;
 }
 
 .list-group-item {
-    padding: 0px 15px;
+    padding: 0px 15px!important;
     margin: 4px 0px;
     background-color: #F3F3F7!important;
 }

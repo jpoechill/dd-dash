@@ -3,8 +3,10 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <div class="sidebar-heading">
-          <img src="/dd-logo.svg" class="pt-3 pb-4 w-25" alt="">
-          <img src="/avatars/avatar-stacey-01.svg" class="d-block pb-2" alt="">
+          <nuxt-link to="/">
+            <img src="/dd-logo.svg" class="pt-3 pb-4 w-25" alt="">
+          </nuxt-link>
+          <img src="/avatars/avatar-stacey-01.png" class="d-block pb-2" alt="">
           <span class="sidebar-text-user pt-0">
             Hello Stacey!
           </span>
@@ -24,11 +26,11 @@
                 <div @click="toggleLink(link.title)" class="px-3 py-2 r-5 w-100 sidebar-link-active mx-0">
                   <!-- <nuxt-link :to="link.url"> -->
                     <div v-show="link.isActive" class="font-weight-bold font-color-blue">
-                      <img src="/sidebar-circle-blue.svg" class="pr-3" alt=""> 
+                      <img src="/sidebar-circle-blue.svg" class="pr-2" alt=""> 
                       {{ link.title }} 
                     </div>
                     <div v-show="!link.isActive">
-                      <img src="/sidebar-circle.svg" class="pr-3" alt=""> 
+                      <img src="/sidebar-circle.svg" class="pr-2" alt=""> 
                       {{ link.title }}
                     </div>
                   <!-- </nuxt-link> -->
@@ -165,12 +167,12 @@ export default {
           links: [
             {
               title: 'Themes',
-              url: '/profile',
+              url: '/extras/themes',
               isActive: false
             },
             {
               title: 'Rules',
-              url: '/connected-profiles',
+              url: '/extras/rules',
               isActive: false
             }
           ],

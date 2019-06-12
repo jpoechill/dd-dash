@@ -1,7 +1,5 @@
 <template>
-    <div class="major-impact">
-      123
-    </div>
+    <div></div>
 </template>
 
 <script>
