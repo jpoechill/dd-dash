@@ -6,7 +6,7 @@
           <nuxt-link to="/">
             <img src="/dd-logo.svg" class="pt-3 pb-4 w-25" alt="">
           </nuxt-link>
-          <img src="/avatars/avatar-stacey-01.png" class="d-block pb-2" alt="">
+          <img src="/avatars/avatar-stacey-01.png" class="w-50 d-block pb-2" alt="">
           <span class="sidebar-text-user pt-0">
             Hello Stacey!
           </span>
