@@ -13,79 +13,23 @@
         </div>
       </div>
       <div class="container">
-        <div class="row  mb-4">
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-101"></video>
-                  <!-- <img src="/unsplash/balloons.png" class="w-100" alt=""> -->
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- <img src="/unsplash/umbrella.png" class="w-100" alt=""> -->
-                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
         <div class="row">
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
+          <div v-for="(profile, index) in profiles" :key="index" class="col-md-4">
+            <div class="container">
               <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
+                <div class="col-md-12 py-4 text-center bg-white">
+                  <img :src="profile.img" class="mb-2" alt="">
+                  <p>
+                    <span class="font-weight-bold">
+                      {{ profile.name }}
+                    </span><br>
+                    {{ profile.role }}
+                  </p>
+                  <p>
+                    Go to Homepage<br>
+                    Go to Dashboard
+                  </p>
+                  <button class="btn btn-red font-weight-bold text-uppercase">Remove Profile</button>
                 </div>
               </div>
             </div>
@@ -101,6 +45,23 @@ export default {
   },
   data() {
     return {
+      profiles: [
+        {
+          name: 'Stacey Rodriguez',
+          role: 'Manager',
+          img: '/avatars/avatar-stacey-02.png'
+        },
+        {
+          name: 'Stacey Rodriguez',
+          role: 'Manager',
+          img: '/avatars/avatar-stacey-02.png'
+        },
+        {
+          name: 'Stacey Rodriguez',
+          role: 'Manager',
+          img: '/avatars/avatar-stacey-02.png'
+        }
+      ]
     }
   },
   methods: {

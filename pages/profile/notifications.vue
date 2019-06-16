@@ -4,88 +4,40 @@
         <div class="row">
           <div class="col-md-12 mt-3">
             <div class="header-text-title">
-              My Profile 
+              Notifications 
             </div>
             <div class="header-text-description mb-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row  mb-4">
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-101"></video>
-                  <!-- <img src="/unsplash/balloons.png" class="w-100" alt=""> -->
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- <img src="/unsplash/umbrella.png" class="w-100" alt=""> -->
-                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
+              Select the type of notifications you would like to receive. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
             </div>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
+          <div class="col-md-12">
+            <div class="container">
               <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
+                <div class="col-md-12 rounded bg-white">
+                  <div class="p-4">
+                    <div class="row">
+                      <div v-for="(notification, index) in notificationItems" :key="index" class="col-md-6 pb-4">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <input type="checkbox">
+                          </div>
+                          <div class="col-md-11">
+                            <h6>{{ notification.title }}</h6>
+                            {{ notification.description }}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-right">
+                        <button class="btn btn-blue text-uppercase font-weight-bold">Update and Save</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,6 +53,28 @@ export default {
   },
   data() {
     return {
+      notificationItems: [
+        {
+          title: 'New Charges',
+          description: 'Get an email when a new charge has been created, or refunded.'
+        },
+        {
+          title: 'New Orders',
+          description: 'Get an email when a new order has been placed.'
+        },
+        {
+          title: 'Updates to Billing',
+          description: 'Get an email when account details are updated. Ie. name, email, address and etc.'
+        },
+        {
+          title: 'Subscription',
+          description: 'Get an email when a subscription is about to expire.'
+        },
+        {
+          title: 'Updates to Credit Card',
+          description: 'Get an email when the credit card on file is changed or updated.'
+        }
+      ]
     }
   },
   methods: {

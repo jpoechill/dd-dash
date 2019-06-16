@@ -42,9 +42,11 @@ module.exports = {
   ** Global CSS
   */
   css: [
-      '~/assets/custom-styles.css',
-      '~/assets/page-content.css',
-      '~/assets/transitions.css'
+    '~/assets/custom-styles.css',
+    '~/assets/page-content.css',
+    '~/assets/transitions.css',
+    '~/assets/bootstrap-mods.css',
+    '~/assets/buttons.css'
   ],
 
   /*

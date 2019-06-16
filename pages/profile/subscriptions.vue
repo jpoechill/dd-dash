@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-md-12 mt-3">
             <div class="header-text-title">
-              My Profile 
+              Subscriptions
             </div>
             <div class="header-text-description mb-3">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
@@ -13,79 +13,59 @@
         </div>
       </div>
       <div class="container">
-        <div class="row  mb-4">
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-101"></video>
-                  <!-- <img src="/unsplash/balloons.png" class="w-100" alt=""> -->
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- <img src="/unsplash/umbrella.png" class="w-100" alt=""> -->
-                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
         <div class="row">
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
+          <div class="col-md-12 mb-3">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-md-12 py-3 bg-white">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sub Type</th>
+                        <th scope="col">Date Ending</th>
+                        <th scope="col">Time Remaining</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="align-middle">
+                          <nuxt-link to="#">Trial</nuxt-link>
+                        </th>
+                        <td class="align-middle">Jul 7th, 2019</td>
+                        <td class="align-middle">One month</td>
+                        <td class="align-middle">
+                          <button class="btn btn-red text-uppercase font-weight-bold">
+                            Unsubscribe
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="align-middle">
+                          <nuxt-link to="#">Trial</nuxt-link>
+                        </th>
+                        <td class="align-middle">Jul 7th, 2019</td>
+                        <td class="align-middle">One month</td>
+                        <td class="align-middle">
+                          <button class="btn btn-red text-uppercase font-weight-bold">
+                            Unsubscribe
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="align-middle">
+                          <nuxt-link to="#">Trial</nuxt-link>
+                        </th>
+                        <td class="align-middle">Jul 7th, 2019</td>
+                        <td class="align-middle">One month</td>
+                        <td class="align-middle">
+                          <button class="btn btn-red text-uppercase font-weight-bold">
+                            Unsubscribe
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

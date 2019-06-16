@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row  mb-4">
+        <div class="row mb-4">
           <div class="col-md-6"> 
             <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
               <div class="row">

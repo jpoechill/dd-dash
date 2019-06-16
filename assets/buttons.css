@@ -1,0 +1,19 @@
+.btn-blue {
+    background-color: #007bff !important;
+    border-radius: 50px!important;
+    transition: .4s ease-in-out;
+    color: #fff !important;
+    padding: 4px 20px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-red {
+  background-color: #DC3545 !important;
+  border-radius: 50px !important;
+  transition: .4s ease-in-out;
+  color: #fff !important;
+  padding: 4px 20px !important;
+  border: none !important;
+  box-shadow: none !important;
+}

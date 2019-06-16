@@ -16,9 +16,9 @@
         </div>
         <div class="list-group list-group-flush">
           <div v-for="(category, index) in sidebarCategories" :key="index">
-            <div @click="toggleCategory(category.categoryName)" class="fake-link">
-              <span class="sidebar-text-small mt-2 d-inline">{{ category.categoryName }}</span>
-              <img class="float-right d-inline pr-4 pt-1 o-75" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/chevron-down.svg" alt="">
+            <div>
+              <span @click="toggleCategory(category.categoryName)" class="sidebar-text-small mt-2 d-inline fake-link">{{ category.categoryName }}</span>
+              <img @click="toggleCategory(category.categoryName)" class="float-right d-inline pr-4 pt-1 o-75 fake-link" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/chevron-down.svg" alt="">
             </div>
             <transition name="fade">
             <div v-if="category.isActive">
@@ -125,58 +125,58 @@ export default {
             }
           ],
         },
-        {
-          categoryName: 'Utilities',
-          isActive: true,
-          links: [
-            {
-              title: 'Dashboard',
-              url: '/utils',
-              isActive: false
-            },
-            {
-              title: 'Coupons',
-              url: '/utils/coupons',
-              isActive: false
-            },
-            {
-              title: 'Funds',
-              url: '/utils/funds',
-              isActive: false
-            },
-            {
-              title: 'Revenue',
-              url: '/utils/revenue',
-              isActive: false
-            },
-            {
-              title: 'Plans',
-              url: '/utils/plans',
-              isActive: false
-            },
-            {
-              title: 'Subscribers',
-              url: '/utils/subscribers',
-              isActive: false
-            }
-          ],
-        },
-        {
-          categoryName: 'Extras',
-          isActive: true,
-          links: [
-            {
-              title: 'Themes',
-              url: '/extras/themes',
-              isActive: false
-            },
-            {
-              title: 'Rules',
-              url: '/extras/rules',
-              isActive: false
-            }
-          ],
-        },
+        // {
+        //   categoryName: 'Utilities',
+        //   isActive: true,
+        //   links: [
+        //     {
+        //       title: 'Dashboard',
+        //       url: '/utils',
+        //       isActive: false
+        //     },
+        //     {
+        //       title: 'Coupons',
+        //       url: '/utils/coupons',
+        //       isActive: false
+        //     },
+        //     {
+        //       title: 'Funds',
+        //       url: '/utils/funds',
+        //       isActive: false
+        //     },
+        //     {
+        //       title: 'Revenue',
+        //       url: '/utils/revenue',
+        //       isActive: false
+        //     },
+        //     {
+        //       title: 'Plans',
+        //       url: '/utils/plans',
+        //       isActive: false
+        //     },
+        //     {
+        //       title: 'Subscribers',
+        //       url: '/utils/subscribers',
+        //       isActive: false
+        //     }
+        //   ],
+        // },
+        // {
+        //   categoryName: 'Extras',
+        //   isActive: true,
+        //   links: [
+        //     {
+        //       title: 'Themes',
+        //       url: '/extras/themes',
+        //       isActive: false
+        //     },
+        //     {
+        //       title: 'Rules',
+        //       url: '/extras/rules',
+        //       isActive: false
+        //     }
+        //   ],
+        // },
       ] 
     }
   },
