@@ -56,7 +56,12 @@
       <div id="page-content-wrapper">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="btn btn-primary" id="menu-toggle" @click="toggleMenu()">Toggle</button>
+          <button class="btn btn-hamburger" id="menu-toggle" @click="toggleMenu()">
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+              <div class="hamburger"></div>
+
+          </button>
 
           <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -101,7 +106,8 @@ export default {
             {
               title: 'My Profile',
               url: '/profile',
-              isActive: true
+              alt: '/',
+              isActive: false
             },
             {
               title: 'Connected Profiles',
@@ -178,6 +184,20 @@ export default {
         //   ],
         // },
       ] 
+    }
+  },
+  mounted() {
+    // console.log(this.$nuxt.$route.path)
+    let currPage = this.$nuxt.$route.path
+
+    // console.log(this.sidebarCategories[0].links.length)
+    // update active link
+    for (let i = 0; i < this.sidebarCategories[0].links.length; i++) {
+      // console.log(currPage)
+      // console.log(this.sidebarCategories.links)
+      if (currPage === this.sidebarCategories[0].links[i].url || currPage === this.sidebarCategories[0].links[i].alt) {
+        this.sidebarCategories[0].links[i].isActive = true
+      }
     }
   },
   methods: {

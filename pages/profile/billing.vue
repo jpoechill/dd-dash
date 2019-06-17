@@ -19,7 +19,7 @@
               <div class="row h-100">
                 <div class="col-md-12 py-3 bg-white">
                   Current Balance Due <br>
-                  <span class="font-size-70 font-weight-bold line-height-custom">
+                  <span class="font-size-68 font-weight-bold line-height-custom">
                     $99.99
                   </span>
                 </div>
@@ -32,13 +32,13 @@
                 <div class="col-md-12 py-3 bg-white">
                   <p>
                     Card Information <br>
-                    <span class="font-weight-bold font-size-28">
+                    <span class="font-weight-bold font-size-24">
                       4747 4747 4747 4747
                     </span>
                   </p>
                   <p>
                     Expiration <br>
-                    <span class="font-weight-bold font-size-28">12/20</span>
+                    <span class="font-weight-bold font-size-24">12/20</span>
                   </p>
                 </div>
               </div>

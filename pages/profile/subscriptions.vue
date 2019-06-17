@@ -21,7 +21,7 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">Sub Type</th>
+                        <th scope="col">Sub. Type</th>
                         <th scope="col">Date Ending</th>
                         <th scope="col">Time Remaining</th>
                         <th scope="col"></th>
@@ -34,7 +34,7 @@
                         </th>
                         <td class="align-middle">Jul 7th, 2019</td>
                         <td class="align-middle">One month</td>
-                        <td class="align-middle">
+                        <td class="align-middle text-right">
                           <button class="btn btn-red text-uppercase font-weight-bold">
                             Unsubscribe
                           </button>
@@ -46,7 +46,7 @@
                         </th>
                         <td class="align-middle">Jul 7th, 2019</td>
                         <td class="align-middle">One month</td>
-                        <td class="align-middle">
+                        <td class="align-middle text-right">
                           <button class="btn btn-red text-uppercase font-weight-bold">
                             Unsubscribe
                           </button>
@@ -58,7 +58,7 @@
                         </th>
                         <td class="align-middle">Jul 7th, 2019</td>
                         <td class="align-middle">One month</td>
-                        <td class="align-middle">
+                        <td class="align-middle text-right">
                           <button class="btn btn-red text-uppercase font-weight-bold">
                             Unsubscribe
                           </button>

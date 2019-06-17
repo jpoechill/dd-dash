@@ -4,7 +4,7 @@
         <div class="row">
           <div class="col-md-12 mt-3">
             <div class="header-text-title">
-              My Profile 
+              Connected Profiles
             </div>
             <div class="header-text-description mb-3">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
@@ -23,11 +23,13 @@
                     <span class="font-weight-bold">
                       {{ profile.name }}
                     </span><br>
-                    {{ profile.role }}
+                    <span class="sidebar-text-email">
+                      {{ profile.role }}
+                    </span>
                   </p>
                   <p>
-                    Go to Homepage<br>
-                    Go to Dashboard
+                    Go to Homepage.<br>
+                    Go to Dashboard.
                   </p>
                   <button class="btn btn-red font-weight-bold text-uppercase">Remove Profile</button>
                 </div>

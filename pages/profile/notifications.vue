@@ -4,10 +4,10 @@
         <div class="row">
           <div class="col-md-12 mt-3">
             <div class="header-text-title">
-              Notifications 
+              Notification Settings
             </div>
             <div class="header-text-description mb-3">
-              Select the type of notifications you would like to receive. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
+              Select the type of notifications you would like to receive.
             </div>
           </div>
         </div>
@@ -27,14 +27,16 @@
                           </div>
                           <div class="col-md-11">
                             <h6>{{ notification.title }}</h6>
-                            {{ notification.description }}
+                            <span class="color-grey">
+                              {{ notification.description }}
+                            </span>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-12 text-right">
-                        <button class="btn btn-blue text-uppercase font-weight-bold">Update and Save</button>
+                        <button class="btn btn-blue text-uppercase font-weight-bold">Save</button>
                       </div>
                     </div>
                   </div>
@@ -56,23 +58,23 @@ export default {
       notificationItems: [
         {
           title: 'New Charges',
-          description: 'Get an email when a new charge has been created, or refunded.'
+          description: 'Receive emails when a new charge has been created, or refunded.'
         },
         {
           title: 'New Orders',
-          description: 'Get an email when a new order has been placed.'
+          description: 'Receive emails when a new order has been placed.'
         },
         {
           title: 'Updates to Billing',
-          description: 'Get an email when account details are updated. Ie. name, email, address and etc.'
+          description: 'Receive emails when account details are updated. Ie. name, email, address and etc.'
         },
         {
           title: 'Subscription',
-          description: 'Get an email when a subscription is about to expire.'
+          description: 'Receive emails when a subscription is about to expire.'
         },
         {
           title: 'Updates to Credit Card',
-          description: 'Get an email when the credit card on file is changed or updated.'
+          description: 'Receive emails when the credit card on file is changed or updated.'
         }
       ]
     }
@@ -84,4 +86,12 @@ export default {
 </script>
 
 <style>
+h6 {
+  font-size: .95rem!important;
+  font-weight: 700!important;
+}
+
+.color-grey {
+  color: #7A7A7A;
+}
 </style>

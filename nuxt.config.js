@@ -3,7 +3,9 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'spa',
-
+  server: {
+    host: '0.0.0.0', // default: localhost
+  },
   /*
   ** Headers of the page
   */
