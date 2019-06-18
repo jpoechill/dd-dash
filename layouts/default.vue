@@ -1,4 +1,5 @@
 <template>
+  <transition name="fade" appear>
     <div class="d-flex" v-bind:class="{ toggled: sidebarIsToggled }" id="wrapper">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
@@ -86,6 +87,7 @@
         </div>
       </div>
     </div>
+  </transition>
 </template>
 
 <script>
@@ -242,6 +244,11 @@ export default {
 
     }
   },
+  transition: {
+    name: 'fade',
+    appear: true,
+    mode: 'out-in'
+  }
 }
 </script>
 

@@ -1,7 +1,9 @@
 <template>
-    <div>
-      <nuxt/>
+  <transition name="fade" appear>
+    <div class="h-100">
+      <nuxt class="h-100" />
     </div>
+  </transition>
 </template>
 
 <script>
@@ -15,9 +17,20 @@ export default {
   },
   methods: {
   },
-  transition: 'fade'
+  transition: {
+    name: 'fade',
+    appear: true,
+    mode: 'out-in'
+  }
 }
 </script>
 
 <style>
+html, body {
+  height: 100%;
+}
+
+#__nuxt, #__layout {
+  height: 100%;
+}
 </style>
