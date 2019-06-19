@@ -70,6 +70,9 @@
 
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-1">
             <li class="nav-item active">
+              <a class="nav-link" href="#">Support <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="#">Sign Out <span class="sr-only">(current)</span></a>
             </li>
           </ul>
@@ -133,58 +136,58 @@ export default {
             }
           ],
         },
-        // {
-        //   categoryName: 'Utilities',
-        //   isActive: true,
-        //   links: [
-        //     {
-        //       title: 'Dashboard',
-        //       url: '/utils',
-        //       isActive: false
-        //     },
-        //     {
-        //       title: 'Coupons',
-        //       url: '/utils/coupons',
-        //       isActive: false
-        //     },
-        //     {
-        //       title: 'Funds',
-        //       url: '/utils/funds',
-        //       isActive: false
-        //     },
-        //     {
-        //       title: 'Revenue',
-        //       url: '/utils/revenue',
-        //       isActive: false
-        //     },
-        //     {
-        //       title: 'Plans',
-        //       url: '/utils/plans',
-        //       isActive: false
-        //     },
-        //     {
-        //       title: 'Subscribers',
-        //       url: '/utils/subscribers',
-        //       isActive: false
-        //     }
-        //   ],
-        // },
-        // {
-        //   categoryName: 'Extras',
-        //   isActive: true,
-        //   links: [
-        //     {
-        //       title: 'Themes',
-        //       url: '/extras/themes',
-        //       isActive: false
-        //     },
-        //     {
-        //       title: 'Rules',
-        //       url: '/extras/rules',
-        //       isActive: false
-        //     }
-        //   ],
-        // },
+        {
+          categoryName: 'Utilities',
+          isActive: true,
+          links: [
+            {
+              title: 'Dashboard',
+              url: '/utils',
+              isActive: false
+            },
+            {
+              title: 'Coupons',
+              url: '/utils/coupons',
+              isActive: false
+            },
+            {
+              title: 'Funds',
+              url: '/utils/funds',
+              isActive: false
+            },
+            {
+              title: 'Revenue',
+              url: '/utils/revenue',
+              isActive: false
+            },
+            {
+              title: 'Plans',
+              url: '/utils/plans',
+              isActive: false
+            },
+            {
+              title: 'Subscribers',
+              url: '/utils/subscribers',
+              isActive: false
+            }
+          ],
+        },
+        {
+          categoryName: 'Extras',
+          isActive: true,
+          links: [
+            {
+              title: 'Themes',
+              url: '/extras/themes',
+              isActive: false
+            },
+            {
+              title: 'Rules',
+              url: '/extras/rules',
+              isActive: false
+            }
+          ],
+        },
       ] 
     }
   },
