@@ -164,4 +164,8 @@ hr {
   border: 2px solid #fff !important;
   border-radius: 10px !important;
 }
+
+.modal {
+  z-index: 99999;
+}
 </style>
