@@ -115,14 +115,14 @@
                     </nuxt-link>
                   </li>
                   <li class="pb-2">
-                    <nuxt-link to="/profile">
+                    <nuxt-link to="/pages/pricing">
                       <button class="btn btn-blue text-uppercase font-weight-bold w-100">
                         Pricing
                       </button>         
                     </nuxt-link>
                   </li>
                   <li class="">
-                    <nuxt-link to="/profile">
+                    <nuxt-link to="/pages/legal">
                       <button class="btn btn-blue text-uppercase font-weight-bold w-100">
                         Legal
                       </button>         

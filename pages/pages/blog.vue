@@ -2,10 +2,10 @@
   <div class="h-100">
     <div class="container h-100">
       <div class="row h-100">
-        <div class="offset-md-3 col-md-6 h-100">
+        <div class="col-md-12 h-100">
           <div class="position-relative h-100">
-            <div class="position-absolute h-100 w-100 d-flex justify-content-center align-items-center">
-              <img src="/cover-landing.png" class="w-100" alt="">
+            <div class="position-absolute w-100 d-flex justify-content-center align-items-center">
+              <img src="/pages-blog.png" class="w-100" alt="">
             </div>
             <div class="position-absolute text-center w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 1111;">
               <ul>
