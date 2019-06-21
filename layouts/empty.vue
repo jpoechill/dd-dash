@@ -33,4 +33,10 @@ html, body {
 #__nuxt, #__layout {
   height: 100%;
 }
+
+
+.modal-backdrop {
+  opacity: .3!important;
+}
+
 </style>

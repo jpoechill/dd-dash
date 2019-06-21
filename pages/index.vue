@@ -5,17 +5,24 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+              Login with Facebook <br>
+              Login with Google <br><br>
+              <p>
+                <input type="text" placeholder="Email Address"> <br>
+                <input type="text" placeholder="Password">
+              </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-red font-weight-bold text-uppercase" data-dismiss="modal">Cancel</button>
+              <nuxt-link to="/pages/onboard">
+                <button type="button" class="btn btn-blue font-weight-bold text-uppercase" data-dismiss="modal">Login</button>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -50,7 +57,7 @@
                     <hr>
                   </li>
                   <li>
-                    <nuxt-link to="/profile">
+                    <nuxt-link to="/pages/onboard">
                       <button class="btn btn-blue text-uppercase font-weight-bold w-100">
                         Onboard
                       </button>         
@@ -144,6 +151,10 @@ export default {
     // this.$router.push({
     //     path: '/profile'
     // })
+    // $('.modal-backdrop').css({display:'none!important'});
+    var x = document.getElementsByClassName("modal-backdrop");
+    // x.style.backgroundColor = 'green';
+    console.log(x)
   },
   data() {
     return {
@@ -168,4 +179,5 @@ hr {
 .modal {
   z-index: 99999;
 }
+
 </style>
