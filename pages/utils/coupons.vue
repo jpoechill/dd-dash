@@ -35,7 +35,9 @@
                       <div class="col-md-4">
                         <br>
                         <p class="pb-0 mb-2">
-                          <button class="form form-control mt-2 btn btn-blue text-uppercase font-weight-bold">Save</button>
+                          <button class="form form-control mt-2 btn btn-blue text-uppercase font-weight-bold">
+                            Create Coupon
+                          </button>
                         </p>
                       </div>                      
                     </div>

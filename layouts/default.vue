@@ -54,9 +54,9 @@
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
-      <div id="page-content-wrapper">
+      <div id="page-content-wrapper" style="margin-left: 300px; ">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: calc(100% - 300px); z-index: 9999;">
           <button class="btn btn-hamburger" id="menu-toggle" @click="toggleMenu()">
               <div class="hamburger"></div>
               <div class="hamburger"></div>
@@ -97,7 +97,7 @@
           </div> -->
         </nav>
 
-        <div class="container-fluid text-sml">
+        <div class="container-fluid text-sml" style="margin-top: 60px; height: calc(100% - 60px); min-height: calc(100vh - 60px);">
           <nuxt/>
         </div>
       </div>
@@ -313,6 +313,10 @@ body {
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
+  min-width: 300px;
+  position: fixed;
+  overflow-y: auto;
+  height: 100%;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
