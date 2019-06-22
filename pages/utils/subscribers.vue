@@ -4,88 +4,79 @@
         <div class="row">
           <div class="col-md-12 mt-3">
             <div class="header-text-title">
-              My Profile 
+              Subscribers
             </div>
             <div class="header-text-description mb-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
+              Use this page to view and manage your current list of active subscribers.
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row  mb-4">
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-101"></video>
-                  <!-- <img src="/unsplash/balloons.png" class="w-100" alt=""> -->
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- <img src="/unsplash/umbrella.png" class="w-100" alt=""> -->
-                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img src="/pages-subscription-filter.png" class="px-2 mb-3 w-100" alt="">
       <div class="container">
         <div class="row">
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
+          <div class="col-md-12">
+            <div class="container">
               <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
+                <div class="col-md-12 mb-4 py-4 bg-white">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Since</th>
+                        <th scope="col">Subscriber</th>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Date Ends</th>
+                        <th scope="col">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">
+                          Jul 7th, 2019
+                        </td>
+                        <td>Agnes Clara</td>
+                        <td scope="row">
+                          Premium
+                        </td>
+                        <td>
+                          Jul 7th, 2022	
+                        </td>
+                        <td style="width: 40%">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab ad aperiam voluptas in veniam. Incidunt fuga error doloribus laudantium, unde nemo maxime laboriosam alias.  
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          Jul 7th, 2019
+                        </td>
+                        <td>Agnes Clara</td>
+                        <td scope="row">
+                          Premium
+                        </td>
+                        <td>
+                          Jul 7th, 2022	
+                        </td>
+                        <td style="width: 40%">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab ad aperiam voluptas in veniam. Incidunt fuga error doloribus laudantium, unde nemo maxime laboriosam alias.  
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          Jul 7th, 2019
+                        </td>
+                        <td>Agnes Clara</td>
+                        <td scope="row">
+                          Premium
+                        </td>
+                        <td>
+                          Jul 7th, 2022	
+                        </td>
+                        <td style="width: 40%">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ab ad aperiam voluptas in veniam. Incidunt fuga error doloribus laudantium, unde nemo maxime laboriosam alias.  
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

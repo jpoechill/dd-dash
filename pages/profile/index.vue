@@ -7,7 +7,7 @@
               My Profile 
             </div>
             <div class="header-text-description mb-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
+              View and edit you current personal information.  
             </div>
           </div>
         </div>

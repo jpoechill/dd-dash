@@ -3,12 +3,12 @@
     <div class="d-flex" v-bind:class="{ toggled: sidebarIsToggled }" id="wrapper">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
-        <div class="sidebar-heading">
+        <div class="sidebar-heading pb-3">
           <nuxt-link to="/">
-            <img src="/dd-logo-02.png" class="pt-3 pb-4 w-25" alt="">
+            <img src="/dd-logo-02.png" class="pt-0 pb-2 w-25" alt="">
           </nuxt-link>
-          <img src="/avatars/avatar-stacey-01.png" class="w-50 d-block pb-2" alt="">
-          <span class="sidebar-text-user pt-0">
+          <!-- <img src="/avatars/avatar-stacey-01.png" class="w-50 d-block pb-2" alt=""> -->
+          <span class="sidebar-text-user pt-2">
             Hello Stacey!
           </span>
           <span class="sidebar-text-email">
@@ -27,11 +27,11 @@
                 <div @click="toggleLink(link.title)" class="px-3 py-2 r-5 w-100 sidebar-link-active mx-0">
                   <!-- <nuxt-link :to="link.url"> -->
                     <div v-show="link.isActive" class="font-weight-bold font-color-blue">
-                      <img src="/sidebar-circle-blue.svg" class="pr-2" alt=""> 
+                      <img :src="link.iconHover" class="pr-2 pb-1" style="max-width: 24px;" alt=""> 
                       {{ link.title }} 
                     </div>
                     <div v-show="!link.isActive">
-                      <img src="/sidebar-circle.svg" class="pr-2" alt=""> 
+                      <img :src="link.icon" class="pr-2 pb-1" style="max-width: 24px;" alt=""> 
                       {{ link.title }}
                     </div>
                   <!-- </nuxt-link> -->
@@ -69,10 +69,22 @@
           </button> -->
 
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-1">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Support <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="">
+              <img src="/avatars/avatar-stacey-01.png" class="pt-1 mr-3" style="max-width: 40px;" alt="">
             </li>
-            <li class="nav-item active">
+            <!-- <li class="nav-item active d-flex align-items-center">
+              <a class="nav-link" href="#">Stacey Rodriguez<span class="sr-only">(current)</span></a>
+            </li> -->
+            <!-- <li class="nav-item active d-flex align-items-center">
+              <a class="nav-link" href="#">|<span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item active d-flex align-items-center">
+              <a class="nav-link" href="#">Support<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active d-flex align-items-center">
               <a class="nav-link" href="#">Sign Out <span class="sr-only">(current)</span></a>
             </li>
           </ul>
@@ -111,27 +123,37 @@ export default {
             {
               title: 'My Profile',
               url: '/profile',
+              icon: '/_icons/user.svg',
+              iconHover: '/_icons/user-blue.svg',
               alt: '/',
               isActive: false
             },
             {
               title: 'Connected Profiles',
               url: '/profile/connected',
+              icon: '/_icons/connected.svg',
+              iconHover: '/_icons/connected-blue.svg',
               isActive: false
             },
             {
               title: 'Notifications',
               url: '/profile/notifications',
+              icon: '/_icons/notifications.svg',
+              iconHover: '/_icons/notifications-blue.svg',
               isActive: false
             },
             {
               title: 'Billing',
               url: '/profile/billing',
+              icon: '/_icons/billing.svg',
+              iconHover: '/_icons/billing-blue.svg',
               isActive: false
             },
             {
               title: 'Subscriptions',
               url: '/profile/subscriptions',
+              icon: '/_icons/subscriptions.svg',
+              iconHover: '/_icons/subscriptions-blue.svg',
               isActive: false
             }
           ],
@@ -143,31 +165,43 @@ export default {
             {
               title: 'Dashboard',
               url: '/utils',
+              icon: '/_icons/dashboard.svg',
+              iconHover: '/_icons/dashboard-blue.svg',
               isActive: false
             },
             {
               title: 'Coupons',
               url: '/utils/coupons',
+              icon: '/_icons/coupons.svg',
+              iconHover: '/_icons/coupons-blue.svg',
               isActive: false
             },
             {
               title: 'Funds',
               url: '/utils/funds',
+              icon: '/_icons/funds.svg',
+              iconHover: '/_icons/funds-blue.svg',
               isActive: false
             },
             {
               title: 'Revenue',
               url: '/utils/revenue',
+              icon: '/_icons/revenue.svg',
+              iconHover: '/_icons/revenue-blue.svg',
               isActive: false
             },
             {
               title: 'Plans',
               url: '/utils/plans',
+              icon: '/_icons/plans.svg',
+              iconHover: '/_icons/plans-blue.svg',
               isActive: false
             },
             {
               title: 'Subscribers',
               url: '/utils/subscribers',
+              icon: '/_icons/subscribers.svg',
+              iconHover: '/_icons/subscribers-blue.svg',
               isActive: false
             }
           ],
@@ -179,11 +213,15 @@ export default {
             {
               title: 'Themes',
               url: '/extras/themes',
+              icon: '/_icons/themes.svg',
+              iconHover: '/_icons/themes-blue.svg',
               isActive: false
             },
             {
               title: 'Rules',
               url: '/extras/rules',
+              icon: '/_icons/rules.svg',
+              iconHover: '/_icons/rules-blue.svg',
               isActive: false
             }
           ],

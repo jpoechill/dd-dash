@@ -4,94 +4,15 @@
         <div class="row">
           <div class="col-md-12 mt-3">
             <div class="header-text-title">
-              My Profile 
+              Revenue and Sales
             </div>
             <div class="header-text-description mb-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos debitis nesciunt ea. Maxime perspiciatis ipsum tempora accusantium aliquid odio necessitatibus.
+              View and manage information about the current state of revenue and sales for your business.
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row  mb-4">
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-01.mov" class="w-101"></video>
-                  <!-- <img src="/unsplash/balloons.png" class="w-100" alt=""> -->
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6"> 
-            <div class="container p-0 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <!-- <img src="/unsplash/umbrella.png" class="w-100" alt=""> -->
-                  <video autoplay muted loop src="/video/stock-video-02.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4"> 
-            <div class="container p-0 mb-3 rounded panel-box-shadow bg-white overflow-hidden">
-              <div class="row">
-                <div class="col-md-12">
-                  <video autoplay muted loop src="/video/stock-video-03.mov" class="w-101"></video>
-                </div>
-              </div>
-              <div class="row px-1 mx-1 py-3">
-                <div class="col-md-12">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, temporibus corrupti dolores accusantium dicta dolorum soluta est id repellat cupiditate?
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <img src="/pages-sales.png" class="w-100" alt="">
     </div>
 </template>
 
