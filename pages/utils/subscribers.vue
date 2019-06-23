@@ -12,8 +12,19 @@
           </div>
         </div>
       </div>
-      <img src="/pages-subscription-filter.png" class="px-2 mb-3 w-100" alt="">
+      <!-- <img src="/pages-subscription-filter.png" class="px-2 mb-3 w-100" alt=""> -->
       <div class="container">
+        <div class="row pt-1 pb-2">
+          <div class="col-md-4">
+            Filter Start Date
+          </div>
+          <div class="col-md-4">
+            Filter End Date
+          </div>
+          <div class="col-md-4">
+            Filter Words
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div class="container">

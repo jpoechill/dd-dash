@@ -48,14 +48,25 @@
           </div>
         </div>
       </div>
-      <img src="/pages-coupons-filter.png" class="mt-3 px-2 mb-3 w-100" alt="">
+      <!-- <img src="/pages-coupons-filter.png" class="mt-3 px-2 mb-3 w-100" alt=""> -->
       <div class="container">
+        <div class="row pt-4 pb-2">
+          <div class="col-md-4">
+            Filter Start Date
+          </div>
+          <div class="col-md-4">
+            Filter End Date
+          </div>
+          <div class="col-md-4">
+            Filter Words
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12">
             <div class="container">
               <div class="row">
-                <div class="col-md-12 mb-4 py-4 bg-white">
-                  <table class="table">
+                <div class="col-md-12 mb-4 py-4 bg-white overflow-auto" style="-webkit-overflow-scrolling: touch;">
+                  <table class="table" style="min-width: 600px;">
                     <thead>
                       <tr>
                         <th scope="col">Code</th>

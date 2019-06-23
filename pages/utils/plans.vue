@@ -12,7 +12,23 @@
           </div>
         </div>
       </div>
-      <img src="/pages-plans.png" class="w-100" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active Subscribers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <img src="/pages-plans-graph.png" class="w-100 mb-4" alt="">
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
 </template>
 

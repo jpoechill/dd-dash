@@ -45,6 +45,7 @@
 /* opacity: 0; */
 transition: .3s ease-in-out;
 color: #000;
+
   /* background-color: white;
   color: #111;
   box-shadow: 2px 2px 6px #BCBCBC; */
@@ -78,6 +79,10 @@ color: #000;
 
 .w-101 {
     width: 101%!important;
+}
+
+.float-right {
+    float: right;
 }
 
 /* .font-weight-bold {

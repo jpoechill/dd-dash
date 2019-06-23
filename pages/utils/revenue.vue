@@ -12,7 +12,28 @@
           </div>
         </div>
       </div>
-      <img src="/pages-sales.png" class="w-100" alt="">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Amount ($)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Balances ($)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <img src="/pages-sales-graph.png" class="mb-4 w-100" alt="">
+          </div>
+        </div>
+      </div>
+      
     </div>
 </template>
 

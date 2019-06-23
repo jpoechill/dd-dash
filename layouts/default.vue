@@ -2,10 +2,10 @@
   <transition name="fade" appear>
     <div class="d-flex" v-bind:class="{ toggled: sidebarIsToggled }" id="wrapper">
       <!-- Sidebar -->
-      <div id="sidebar-wrapper">
+      <div id="sidebar-wrapper" v-bind:style="sidebarIsToggled ? 'overflow: hidden!important; margin-left: -15rem;' : ''">
         <div class="sidebar-heading pb-3">
           <nuxt-link to="/">
-            <img src="/dd-logo-02.png" class="pt-0 pb-2 w-25" alt="">
+            <img src="/dd-logo-02.svg" class="pt-0 pb-2 w-25" alt="">
           </nuxt-link>
           <!-- <img src="/avatars/avatar-stacey-01.png" class="w-50 d-block pb-2" alt=""> -->
           <span class="sidebar-text-user pt-2">
@@ -24,9 +24,9 @@
             <transition name="fade">
             <div v-if="category.isActive">
               <nuxt-link v-for="(link, linkIndex) in category.links" :key="linkIndex" :to="link.url" class="list-group-item list-group-item-action d-flex align-items-center">
-                <div @click="toggleLink(link.title)" class="px-3 py-2 r-5 w-100 sidebar-link-active mx-0">
+                <div @click="toggleLink(link.title)" class="px-3 py-2 r-5 w-100 mx-0">
                   <!-- <nuxt-link :to="link.url"> -->
-                    <div v-show="link.isActive" class="font-weight-bold font-color-blue">
+                    <div v-show="link.isActive" class="font-color-blue">
                       <img :src="link.iconHover" class="pr-2 pb-1" style="max-width: 24px;" alt=""> 
                       {{ link.title }} 
                     </div>
@@ -54,50 +54,47 @@
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
-      <div id="page-content-wrapper" style="margin-left: 300px; ">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: calc(100% - 300px); z-index: 9999;">
-          <button class="btn btn-hamburger" id="menu-toggle" @click="toggleMenu()">
+      <div id="page-content-wrapper" style="transition: margin .25s ease-out" :style="!sidebarIsToggled ? 'margin-left: 240px' : 'margin-left: 0px'">
+        <nav class="navbar navbar-light bg-light" :style="!sidebarIsToggled ? '' : 'width: 100%!important;'" style="position: fixed; width: calc(100% - 240px); z-index: 9999; transition: .25s ease-out;">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-md-12 w-100">
+                <div class="d-inline-block">
+                  <button class="btn btn-hamburger" id="menu-toggle" @click="toggleMenu()" >
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                  </button>
+                </div>
+                <div class="d-inline float-right">Sign Out</div>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="btn btn-hamburger" id="menu-toggle" @click="toggleMenu()" >
               <div class="hamburger"></div>
               <div class="hamburger"></div>
               <div class="hamburger"></div>
 
-          </button>
+          </button> -->
 
           <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button> -->
 
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-1">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="#">Support <span class="sr-only">(current)</span></a>
-            </li> -->
+          <!-- <ul class="navbar-nav ml-auto mt-2 mt-lg-0 pr-1">
             <li class="">
               <img src="/avatars/avatar-stacey-01.png" class="pt-1 mr-3" style="max-width: 40px;" alt="">
             </li>
-            <!-- <li class="nav-item active d-flex align-items-center">
-              <a class="nav-link" href="#">Stacey Rodriguez<span class="sr-only">(current)</span></a>
-            </li> -->
-            <!-- <li class="nav-item active d-flex align-items-center">
-              <a class="nav-link" href="#">|<span class="sr-only">(current)</span></a>
-            </li> -->
             <li class="nav-item active d-flex align-items-center">
               <a class="nav-link" href="#">Support<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active d-flex align-items-center">
               <a class="nav-link" href="#">Sign Out <span class="sr-only">(current)</span></a>
             </li>
-          </ul>
-          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Sign Out <span class="sr-only">(current)</span></a>
-              </li>
-            </ul>
-          </div> -->
+          </ul> -->
         </nav>
 
-        <div class="container-fluid text-sml" style="margin-top: 60px; height: calc(100% - 60px); min-height: calc(100vh - 60px);">
+        <div class="container-fluid text-sml" style="margin-top: 50px; height: calc(100% - 60px); min-height: calc(100vh - 60px);">
           <nuxt/>
         </div>
       </div>
@@ -233,6 +230,10 @@ export default {
     // console.log(this.$nuxt.$route.path)
     let currPage = this.$nuxt.$route.path
 
+    window.addEventListener('resize', function() {
+      this.handleResize()
+    });
+
     // console.log(this.sidebarCategories[0].links.length)
     // update active link
     for (let i = 0; i < this.sidebarCategories[0].links.length; i++) {
@@ -263,6 +264,9 @@ export default {
           categories[category].isActive = !categories[category].isActive
         }
       }
+    },
+    handleResize () {
+      console.log('Do something')
     },
     toggleLink (linkTitle) {
       let categories = this.sidebarCategories
@@ -307,16 +311,18 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
-  min-width: 300px;
+  /* min-width: 300px; */
   position: fixed;
-  overflow-y: auto;
+  overflow-y: auto!important;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
+  z-index: 9999999999999;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -340,9 +346,24 @@ body {
   margin-left: 0;
 }
 
+@media (max-width: 768px) {
+  #sidebar-wrapper {
+    overflow: hidden;
+    margin-left: 0px;
+  }
+
+  #page-content-wrapper {
+    /* margin-left: 0px!important; */
+  }
+
+  .navbar {
+    width: 100%!important;
+  }
+}
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
-    margin-left: 0;
+    margin-left: 0px;
   }
 
   #page-content-wrapper {
