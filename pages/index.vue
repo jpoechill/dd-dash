@@ -1,160 +1,78 @@
 <template>
-    <div class="h-100">
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-3">
+            <div class="header-text-title">
+              My Profile 
             </div>
-            <div class="modal-body">
-              Login with Facebook <br>
-              Login with Google <br><br>
-              <p>
-                <input type="text" placeholder="Email Address"> <br>
-                <input type="text" placeholder="Password">
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-red font-weight-bold text-uppercase" data-dismiss="modal">Cancel</button>
-              <nuxt-link to="/pages/onboard">
-                <button type="button" class="btn btn-blue font-weight-bold text-uppercase" data-dismiss="modal">Login</button>
-              </nuxt-link>
+            <div class="header-text-description mb-3">
+              View and edit you current personal information.  
             </div>
           </div>
         </div>
       </div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="offset-md-3 col-md-6 h-100">
-            <div class="position-relative h-100">
-              <div class="position-absolute h-100 w-100 d-flex justify-content-center align-items-center">
-                <!-- <img src="/cover-post-click.png" class="w-100" alt=""> -->
-                <!-- <div class="container-fixed-ratio"> 
-              <div class="content-fixed-ratio overflow-hidden d-flex align-items-center"> -->
-                <video class="w-100" autoplay muted loop src="https://player.vimeo.com/external/280933857.sd.mp4?s=2cab736310b4b0aa4de60f09bedbd79090091305&profile_id=165&oauth2_token_id=57447761" style=""></video>
-              <!-- </div> 
-            </div> -->
-              </div>
-              <div class="position-absolute text-center w-100 h-100 d-flex justify-content-center align-items-center" style="z-index: 1111;">
-                <ul>
-                  <li class="pt-2 pb-2">
-                    <!-- <nuxt-link to="/pages/login"> -->
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100" data-toggle="modal" data-target="#exampleModal">
-                        Login
-                      </button>         
-                    <!-- </nuxt-link> -->
-                  </li>
-                  <li class="">
-                    <button class="btn btn-blue text-uppercase font-weight-bold w-100" data-toggle="modal" data-target="#exampleModal">
-                        Sign Up
-                      </button>  
-                  </li>
-                  <li class="">
-                    <hr>
-                  </li>
-                  <li>
-                    <nuxt-link to="/pages/onboard">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        Onboard
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li class="">
-                    <hr>
-                  </li>
-                  <li class="pb-2">
-                    <nuxt-link to="/profile">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        → Dashboard
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link to="/pages/landing">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        → Landing
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li class="">
-                    <hr>
-                  </li>
-                  <li class="pb-2">
-                    <nuxt-link to="/pages/my-apps">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        → My Apps
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li>
-                    <nuxt-link to="/pages/my-apps-cp">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        → My Apps CP
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li class="">
-                    <hr>
-                  </li>
-                  <li class="pb-2">
-                    <nuxt-link to="/pages/support">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        Support
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li class="pb-2">
-                    <nuxt-link to="/pages/blog">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        Blog
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li class="pb-2">
-                    <nuxt-link to="/pages/pricing">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        Pricing
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                  <li class="">
-                    <nuxt-link to="/pages/legal">
-                      <button class="btn btn-blue text-uppercase font-weight-bold w-100">
-                        Legal
-                      </button>         
-                    </nuxt-link>
-                  </li>
-                </ul>         
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 rounded bg-white">
+                  <div class="p-4">
+                    <div class="row">
+                      <div class="col-md-6 pb-1">
+                        Full Name
+                        <p>
+                          <input type="text" value="Stacey Rodriguez" class="form form-control mt-2">
+                        </p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        Email Address
+                        <p><input type="text" value="stacey.rodriguez@gmail.com" class="form form-control mt-2"></p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        Phone Number
+                        <p><input type="text" value="415-555-5555" class="form form-control mt-2"></p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        Country
+                        <p><input type="text" value="USA" class="form form-control mt-2"></p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        State
+                        <p><input type="text" value="CA" class="form form-control mt-2"></p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        City
+                        <p><input type="text" value="San Francisco" class="form form-control mt-2"></p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        Street Address
+                        <p><input type="text" value="555 Magnolia St." class="form form-control mt-2"></p>
+                      </div>
+                      <div class="col-md-6 pb-1">
+                        Postal Code
+                        <p><input type="text" value="94555" class="form form-control mt-2"></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-right">
+                        <button class="btn btn-blue text-uppercase font-weight-bold">Save</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
 </template>
 
 <script>
 export default {
-  head: {
-    bodyAttrs: {
-      class: 'overflow-hidden'
-    }
-  },
   components: {
-  },
-  layout: 'empty',
-  created() {
-    // this.$router.push({
-    //     path: '/profile'
-    // })
-    // $('.modal-backdrop').css({display:'none!important'});
-    var x = document.getElementsByClassName("modal-backdrop");
-    // x.style.backgroundColor = 'green';
-    console.log(x)
   },
   data() {
     return {
@@ -166,18 +84,5 @@ export default {
 }
 </script>
 
-<style scoped>
-li {
-  list-style: none;
-}
-
-hr {
-  border: 2px solid #fff !important;
-  border-radius: 10px !important;
-}
-
-.modal {
-  z-index: 99999;
-}
-
+<style>
 </style>
